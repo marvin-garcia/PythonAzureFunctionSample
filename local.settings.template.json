@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "function storage connection string",
+    "EventHubName": "your event hub name",
+    "EventHubConnection": "your event hub namespace connection string",
+    "StorageBindingPath": "files/output.json",
+    "StorageConnection": "your storage connection string"
+  }
+}

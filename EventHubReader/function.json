@@ -1,0 +1,29 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "events",
+      "direction": "in",
+      "eventHubName": "%EventHubName%",
+      "connection": "EventHubConnection",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    },
+    {
+      "name": "inputblob",
+      "type": "blob",
+      "dataType": "binary",
+      "path": "%StorageBindingPath%",
+      "connection": "StorageConnection",
+      "direction": "in"
+    },
+    {
+      "name": "outputblob",
+      "type": "blob",
+      "path": "%StorageBindingPath%",
+      "connection": "StorageConnection",
+      "direction": "out"
+    }
+  ]
+}
